@@ -32,3 +32,22 @@ print("\nMissing values in Courier Invoice:")
 print(courier_invoice.isnull().sum())
 print("\nMissing values in courier company rates:")
 print(courier_company_rates.isnull().sum())
+
+## Now let’s clean the data:
+
+1
+# Remove unnamed columns from the Website Order Report DataFrame
+2
+order_report = order_report.drop(columns=['Unnamed: 3', 'Unnamed: 4'])
+3
+​
+4
+# Remove unnamed columns from the SKU Master DataFrame
+5
+sku_master = sku_master.drop(columns=['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'])
+6
+​
+7
+# Remove unnamed columns from the Pincode Mapping DataFrame
+8
+pincode_mapping = pincode_mapping.drop(columns=['Unnamed: 3', 'Unnamed: 4']
