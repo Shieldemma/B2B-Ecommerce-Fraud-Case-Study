@@ -10,4 +10,32 @@ ABC wants to compare the total weight of each order calculated using the SKU mas
 
 In addition, ABC must apply the logic of calculating charges based on the slab weight, delivery area and type of shipment listed on the courier company’s invoice. The courier fee rate card provides a fixed fee and an additional fee for each weight plate and PIN. The total charge per shipment should be calculated by adding the fixed charge and any additional charges based on plate weight.
 
-The final solution should include a table with the following columns:
+##INTRODUCTION
+In today’s fast-paced e-commerce industry, fast and efficient order delivery is crucial to business success. To ensure seamless order fulfilment, businesses often partner with courier companies to ship their products to customers. However, managing the charges collected by these courier companies can be difficult, especially when dealing with a high volume of orders. It is one of the real-time problems B2B businesses experience when their estimated charges for the same invoice don’t match. In this article, I will take you through a solution to one such problem statement based on B2B Courier Charges Accuracy Analysis using Python.
+B2B Courier Charges Accuracy Analysis
+B2B courier charges accuracy analysis focuses on assessing the accuracy of fees charged by courier companies for the delivery of goods in B2B transactions. The aim is to ensure that companies are billed appropriately for the services provided by courier companies.
+
+It is one of the problems that will help you use most of your skills in working with data. You can find the dataset I will use to solve this problem along with the complete problem statement here.
+
+Now in the section below, I’ll take you through the task of B2B Courier Charges Accuracy Analysis using the Python programming language.
+
+B2B Courier Charges Accuracy Analysis using Python
+Let’s start this task by importing the necessary Python libraries and the dataset:
+import pandas as pd
+
+order_report = pd.read_csv('Order Report.csv')
+sku_master = pd.read_csv('SKU Master.csv')
+pincode_mapping = pd.read_csv('pincodes.csv')
+courier_invoice = pd.read_csv('Invoice.csv')
+courier_company_rates = pd.read_csv('Courier Company - Rates.csv')
+
+print("Order Report:")
+print(order_report.head())
+print("\nSKU Master:")
+print(sku_master.head())
+print("\nPincode Mapping:")
+print(pincode_mapping.head())
+print("\nCourier Invoice:")
+print(courier_invoice.head())
+print("\nCourier Company rates:")
+print(courier_company_rates.head())
