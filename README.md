@@ -19,5 +19,10 @@ It is one of the problems that will help you use most of your skills in working 
 
 Now in the section below, I’ll take you through the task of B2B Courier Charges Accuracy Analysis using the Python programming language.
 
+
+## INSIGHTS AND FINDINGS
+![Outcome Visualization](b2b-accuracy-plot.webp)
+b2b-accuracy-plot.webp
+
 ## Summary
 B2B courier charges accuracy analysis focuses on assessing the accuracy of fees charged by courier companies for the delivery of goods in B2B transactions. In such problems, we aim to ensure that companies are billed appropriately for the services provided by courier companies. I hope you liked this article on B2B Courier Charges Accuracy Analysis using Python. Feel free to ask valuable questions in the comments section below.
